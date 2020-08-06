@@ -1,0 +1,21 @@
+{
+	"pluginmetadataversion": 2,
+	"name": "VersionBug",
+	"type": ["binaryview", "ui"],
+	"api": ["python2", "python3"],
+	"description": "Minimal repro of bug saving/loading bndb",
+	"longdescription": "bndbs with a user segment preceding an auto segment do not reload properly on new Binary Ninja versions. Verified to affect version 2.1.2322-dev.",
+	"license": {
+		"name": "Public Domain",
+		"text": "I release this work with no restrictions whatsoever"
+	},
+	"platforms": ["Windows", "Linux", "Darwin"],
+	"installinstructions": {
+		"Windows": "",
+		"Linux": "",
+		"Darwin": ""
+	},
+	"version": "1.0",
+	"minimumbinaryninjaversion": 0,
+	"author": "Thomas Hebb"
+}
