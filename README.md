@@ -9,8 +9,7 @@ The bug happens when using a BinaryView that creates an auto segment. To trigger
 it, create a user segment with a start address before the auto segment. Then,
 save and reload the bndb, and observe that the user segment has taken the start
 address of the auto segment, and the portion of the auto segment which it now
-overlaps (which, if the file is less than 0x80 bytes, is all of it) no longer
-exists.
+overlaps (which, if the user segment is larger, is all of it) no longer exists.
 
 Detailed repro steps:
  1. Open any data file in Binary Ninja. (`demo-files/` contains a 4-byte and a
